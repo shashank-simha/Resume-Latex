@@ -1,0 +1,223 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academiconszzzzz
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,normalphoto]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1.8cm,right=10cm,marginparwidth=7cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{444445}
+\definecolor{LightGrey}{HTML}{333333}
+\definecolor{DarkGrey}{HTML}{000000}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\colorlet{Highlighter}{DarkGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Shashank Simha M R}
+\tagline{Avid Worker, Tech Enthusiast}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+% \photo{3.3cm}{profile.jpeg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{shashank.simha@ieee.org}
+   \phone{+91 9482038408}
+% \mailaddress{ Los Angeles}
+%   \location{2620 Ellendale Pl,Los Angeles, CA 90007}
+ \homepage{simha.me}
+%  \twitter{@marissamayer}
+%   \linkedin{https://linkedin.com/in/adithyasanjeev}
+ \github{github.com/shashank-simha} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+% \cvsection[page1sidebar]{Education}
+% \cvevent{Bachelor degree}{National Institute of Engineering}{ Aug 2016 -- Dec 2020}{Mysore, India}
+% \begin{itemize}
+% \item Major: Electronics \& Communication
+% \smallskip
+% \item CGPA: 9.11 (5 semesters)
+% % \smallskip
+% % \item Related coursework:\\  Probability, Introduction to Algorithms, Operating Systems, \\ Object Oriented Programming, Discrete Math,  Database,\\ Principles of Programming Languages, Data Structures,\\ Introduction to Computer Network, System Programming, \\ Artificial Intelligence, Computer Architecture, Digital Logic
+% \end{itemize}
+% \divider
+
+\cvsection[page1sidebar]{Work Experience}
+
+\cveventmodified{Summer Research Intern}{Indian Institute of Science}{June -- July 2019}
+\begin{itemize}
+\item Worked on Implementation of Trilateration algorithm (based on RSSI) on TI-RSLK.
+\smallskip
+\item Developing a self localizing robot using Robot System Learning Kit and Zigbee module.
+\item Successfully demonstrated the project at TI-RSLK(Max) launch event.
+\item Technologies: \\ Embedded C, Zigbee Communication, MSP432,  RSL kit
+\end{itemize}
+
+% \divider
+
+% \cvevent{Software Engineer Intern}{Foxout}{January -- Febuary 2018}{Almaty, Kazakhstan}
+% \begin{itemize}
+% \item Foxout is a startup based on selling tickets.
+% \smallskip
+% \item Worked as a back-end engineer. My task was to implement \\back-end for admin's website for partners such as cinemas and theatres.
+% \item Technologies: VueJs, REST API, Django
+% \end{itemize}
+
+%\divider
+
+\cvsection{Leadership Experience}
+
+\cveventmodified{Hub Incharge - Mysuru}{IEEE Bangalore Section SAC}{May 2019 -- Present}
+\begin{itemize}
+\item Leading Website team for SYWL congress and Coordinating Website task force. Working for Collaboration Events among IEEE Student Branches.
+\end{itemize}
+
+\divider
+
+\cveventmodified{Student Coordinator}{IEEE India Council}{March 2019 -- Present}
+\begin{itemize}
+\item Been a part of Student Co-ordination Team, Worked for Online Training and Webinar team, Leading the website team for AISYWC'19.
+\end{itemize}
+
+\divider
+
+\cveventmodified{Vice-Chairperson}{NIE IEEE Student Branch}{June 2018 -- May 2019}
+\begin{itemize}
+\item Led a team of 13 members, organizing over 70 events and 4 technical fests. Developed 2 Android apps and a Website for Events.
+\end{itemize}
+
+% \cvsection{Projects}
+% \cvproject{Chat}
+% \begin{itemize}
+% \item Simple multi-room user client-server chat where interface is command line. Chat is implemented with C++ and uses threads and sockets.
+% \end{itemize}
+
+
+\cvsection{Skills}
+\smallskip
+\cvproject{Embedded Systems:}
+\begin{itemize}
+\item {\color{Highlighter} Microcontrollers and Microprocessors:} 8051, x86, Atmega, Arduino, ESP 8266, ESP 32, Raspberry Pi, etc.
+\item {\color{Highlighter} Programming Languages and Tools:} Assembly, Embedded C, Arduino, MicroPython, Keil uVision, Proteus
+\item Kernel Programming, Shell Scripting and Real Time Operating
+\item Communication Protocols
+\item Sensors, Actuators and Peripheral hardware
+Systems(RTOS)
+\item Electronic Circuit Board (or PCB) design and troubleshooting
+\end{itemize}
+\smallskip
+
+\cvproject{Computer Programming:}
+\begin{itemize}
+\item {\color{Highlighter} Programming Languanges:} C, C++, Python, PHP
+\item Full Stack Web Development
+\item {\color{Highlighter} Databases:} MySQL, MongoDB, PostgreSQL, Firebase
+\item {\color{Highlighter} Frame works:} Laravel, Flask, Bootstrap
+\item Android Development
+\item Computer Networks (IP Networking)
+\end{itemize}
+
+% \divider
+%\cvskill{German}{}
+
+%\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+% \wheelchart{1.5cm}{0.5cm}{%
+%   10/10em/accent!30/Sleeping \& dreaming about work,
+%   25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+%   5/13em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+%   20/15em/accent!40/Spending time with family,
+%   5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+%   30/9em/accent/Showing Yahoo!\ employees that their work has meaning,
+%   5/8em/accent!20/Baking cupcakes
+% }
+
+% \clearpage
+
+% \cvsection[page2sidebar]{Publications}
+
+% \nocite{*}
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+% %% If the NEXT page doesn't start with a \cvsection but you'd
+% %% still like to add a sidebar, then use this command on THIS
+% %% page to add it. The optional argument lets you pull up the
+% %% sidebar a bit so that it looks aligned with the top of the
+% %% main column.
+% % \addnextpagesidebar[-1ex]{page3sidebar}
+
+\end{document}
